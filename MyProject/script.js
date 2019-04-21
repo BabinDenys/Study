@@ -32,6 +32,8 @@ function createmassOfCards () {
         massCards[numberLevelOfCards*4 +i] = numberLevelOfCards;
     }
 }
+// a%b !!
+
 
 createmassOfCards(); // Отсортированый по порядку масссив ценности карт
 
@@ -60,39 +62,28 @@ function createRandomMassOfCards () {
 createRandomMassOfCards();
 
 console.log(massRandomCards);
-var arr = [[],[],[]];
+
+// var massCardsToOnePlayer = [];
 var objectPlayers = {};
 var cardsToOnePlayer = ((numberOfCards-(numberOfCards%players)) / players);
 
-// for ( let i = 0; i < players; i++) {
-//     objectPlayers[i] = arr;
-//      for( let i2 = 0; i2 < cardsToOnePlayer; i2++) {
-//         console.log(objectPlayers);
-//         objectPlayers[i][i2] = massRandomCards[0];
-//         massRandomCards.shift();
-        
-//         console.log(massRandomCards);
-        
-//      }
-     
-// }
-// console.log("Лишние карты: " + (massRandomCards.length));
-// console.log(objectPlayers);
-
-// objectPlayers[er][0] = 3;
-// console.log(objectPlayers[er]);
 for ( let i = 0; i < players; i++) {
-    arr[i][0] = '1';
-    console.log(arr[i][0]);
-    console.log(arr);
-    //  for( let i2 = 0; i2 < cardsToOnePlayer; i2++) {
+     objectPlayers[i] = [];
+     for( let i2 = 0; i2 < cardsToOnePlayer; i2++) {
         
-    //     arr[i][i2] = massRandomCards[0];
+        objectPlayers[i].unshift(massRandomCards[0]) ;
+        massRandomCards.shift();
         
-    //     massRandomCards.shift();
+        //console.log(massRandomCards);
         
-        
-        
-        
-   //  }
+     }
 }
+console.log(objectPlayers);
+// aaaaaa.forEach
+ console.log("Лишние карты: " + (massRandomCards.length));
+
+ for (let i = 0; i < cardsToOnePlayer ; i++ ) {
+    for ( let i2 = 0; i2 < players; i2++) {
+
+    }
+ }
