@@ -1,0 +1,20 @@
+.field {
+    background-color: white;
+    border: 5px solid red;
+
+    width: 800px;
+    height: 600px;
+}
+div .fields {
+    
+    width: 850px;
+    float : left ;
+}
+div .records{
+    
+    width: 300px;
+    float: right;
+}
+body {
+    background-image: url("..//files/background.jpg"); 
+}
