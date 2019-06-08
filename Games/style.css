@@ -1,0 +1,14 @@
+body {
+    background-image: url("files/escheresque_ste.png");
+    font-family: Verdana;
+}
+h1 {
+    font-size: 60px;
+    color: red;
+    text-align: center;
+}
+.foto {
+    margin-left: auto;
+    margin-right: auto;
+    
+}

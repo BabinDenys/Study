@@ -1,0 +1,15 @@
+
+div {
+
+    width: 600px;
+    height: 800px;
+
+}
+circle {
+
+    fill: aqua;
+}
+svg {
+    border: 10px solid red;
+    
+}
